@@ -9,8 +9,7 @@
     content="Portfolio of James Zhou — UBC Computer Science (AI Option) student and BlackBerry QNX Software Development Co-op working on embedded audio, RTOS, and full-stack software." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,500;0,600;1,400&display=swap"
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,500;0,600;1,400&display=swap"
     rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
@@ -26,11 +25,11 @@
         <span class="status-badge">Vancouver, BC · Toronto, ON</span>
       </div>
 
-              <nav class="tab-bar" role="tablist" aria-label="Portfolio sections">
-                <button type="button" class="tab-btn is-active" role="tab" aria-selected="true"
-                  aria-controls="panel-about" id="tab-about" data-tab="about">
-                  <span class="tab-idx">[1]</span> about
-                </button>
+      <nav class="tab-bar" role="tablist" aria-label="Portfolio sections">
+        <button type="button" class="tab-btn is-active" role="tab" aria-selected="true" aria-controls="panel-about"
+          id="tab-about" data-tab="about">
+          <span class="tab-idx">[1]</span> about
+        </button>
         <button type="button" class="tab-btn" role="tab" aria-selected="false" aria-controls="panel-experience"
           id="tab-experience" data-tab="experience">
           <span class="tab-idx">[2]</span> experience
@@ -47,268 +46,288 @@
           id="tab-skills" data-tab="skills">
           <span class="tab-idx">[5]</span> skills &amp; more
         </button>
-        </nav>
+      </nav>
     </header>
 
-      <main class="main-pane">
-        <!-- TAB 1: ABOUT -->
-        <section class="tab-panel is-active" id="panel-about" role="tabpanel" aria-labelledby="tab-about">
-          <div class="panel-header">
-            <span class="cmd-line">&gt; cat about.txt</span>
+    <main class="main-pane">
+      <!-- TAB 1: ABOUT -->
+      <section class="tab-panel is-active" id="panel-about" role="tabpanel" aria-labelledby="tab-about">
+        <div class="panel-header">
+          <span class="cmd-line">&gt; cat about.txt</span>
+        </div>
+
+        <h1 class="hero-name">James Zhou<span class="cursor" aria-hidden="true">_</span></h1>
+        <p class="lead">
+          Computer Science (AI Option) undergraduate at UBC and Software Development Co-op at
+          <strong>BlackBerry QNX</strong>. I work across embedded audio, real-time operating systems,
+          and full-stack web applications.
+        </p>
+
+        <div class="info-box">
+          <div class="info-row">
+            <span class="info-key">role</span>
+            <span class="info-val">Software Development Student, Acoustics Algorithms @ BlackBerry QNX</span>
           </div>
+          <div class="info-row">
+            <span class="info-key">degree</span>
+            <span class="info-val">BSc Computer Science (AI Option), UBC Science Co-op · 3.9 GPA</span>
+          </div>
+          <div class="info-row">
+            <span class="info-key">focus</span>
+            <span class="info-val">Embedded Audio · QNX RTOS · Full-Stack Web · Applied AI</span>
+          </div>
+        </div>
 
-                <h1 class="hero-name">James Zhou<span class="cursor" aria-hidden="true">_</span></h1>
-                <p class="lead">
-                  Computer Science (AI Option) undergraduate at UBC and Software Development Co-op at
-                  <strong>BlackBerry QNX</strong>. I work across embedded audio, real-time operating systems,
-                  and full-stack web applications.
-                </p>
+        <div class="hero-links">
+          <a href="https://github.com/JameJ0" target="_blank" rel="noopener noreferrer" class="link-pill">
+            [github]
+          </a>
+          <a href="https://www.linkedin.com/in/zhou-james-49a939364/" target="_blank" rel="noopener noreferrer"
+            class="link-pill">
+            [linkedin]
+          </a>
+          <a href="mailto:jameszhou0504@gmail.com" class="link-pill">
+            [email]
+          </a>
+          <button type="button" class="link-pill" id="print-resume-btn">
+            [print / save pdf]
+          </button>
+        </div>
+      </section>
 
-                <div class="info-box">
-                  <div class="info-row">
-                    <span class="info-key">role</span>
-                    <span class="info-val">Software Development Student, Acoustics Algorithms @ BlackBerry QNX</span>
-                  </div>
-                    <div class="info-row">
-                      <span class="info-key">degree</span>
-                      <span class="info-val">BSc Computer Science (AI Option), UBC Science Co-op · 3.9 GPA</span>
-                    </div>
-            <div class="info-row">
-              <span class="info-key">focus</span>
-              <span class="info-val">Embedded Audio · QNX RTOS · Full-Stack Web · Applied AI</span>
+      <!-- TAB 2: EXPERIENCE -->
+      <section class="tab-panel" id="panel-experience" role="tabpanel" aria-labelledby="tab-experience">
+        <div class="panel-header">
+          <span class="cmd-line">&gt; cat experience.log</span>
+        </div>
+
+        <div class="timeline">
+          <article class="entry">
+            <div class="entry-meta">
+              <span class="date">Sep 2026 — Apr 2027</span>
+              <span class="location">Burnaby, BC</span>
             </div>
-          </div>
-
-              <div class="hero-links">
-                <a href="https://github.com/JameJ0" target="_blank" rel="noopener noreferrer" class="link-pill">
-                  [github]
-                </a>
-                <a href="mailto:hello@example.com" class="link-pill">
-                  [email]
-                </a>
-                <button type="button" class="link-pill" id="print-resume-btn">
-                  [print / save pdf]
-                </button>
-              </div>
-        </section>
-
-        <!-- TAB 2: EXPERIENCE -->
-        <section class="tab-panel" id="panel-experience" role="tabpanel" aria-labelledby="tab-experience">
-          <div class="panel-header">
-            <span class="cmd-line">&gt; cat experience.log</span>
-          </div>
-
-          <div class="timeline">
-            <article class="entry">
-              <div class="entry-meta">
-                <span class="date">Sep 2026 — Apr 2027</span>
-                <span class="location">Burnaby, BC</span>
-              </div>
-              <div class="entry-body">
-                <h3>Software Development Student · BlackBerry QNX</h3>
-                <p class="role-sub">Acoustics Algorithms Team (8-Month Co-op)</p>
-                <p>
-                  Bringing up QNX SDP 7.1 on Raspberry Pi hardware and building embedded audio testing
-                  workflows for acoustic algorithm development.
-                </p>
-              </div>
-            </article>
-
-            <article class="entry">
-              <div class="entry-meta">
-                <span class="date">Jul — Sep 2026</span>
-                <span class="location">Remote</span>
-              </div>
-              <div class="entry-body">
-                <h3>Software &amp; AI Project Roles · Riipen Level UP</h3>
-                <ul class="clean-list">
-                  <li>
-                    <strong>Pixels to Players:</strong> Built Vue/JavaScript features, UX/UI prototypes,
-                    and QA workflows for a game playtesting platform (60-hour engagement).
-                  </li>
-                  <li>
-                    <strong>Byte Quest Solutions:</strong> Contributed to curriculum planning and applied
-                    AI workflow research for an AI education initiative.
-                  </li>
-                </ul>
-              </div>
-            </article>
-
-            <article class="entry">
-              <div class="entry-meta">
-                <span class="date">Apr 2024</span>
-                <span class="location">Aurora, ON</span>
-              </div>
-              <div class="entry-body">
-                <h3>Computer Engineering TA &amp; Instructor · St. Andrew’s College</h3>
-                <p>
-                  Taught CAD fundamentals and programming logic for the SAC-CS First Teaching Program.
-                </p>
-              </div>
-            </article>
-
-            <article class="entry">
-              <div class="entry-meta">
-                <span class="date">Nov 2021 — Jul 2023</span>
-                <span class="location">Ontario</span>
-              </div>
-              <div class="entry-body">
-                <h3>Donations Processor &amp; Sales Associate · MCC Thrift Ontario</h3>
-                <p>
-                  Managed retail operations and re-engineered donation intake pipelines to improve
-                  sorting throughput.
-                </p>
-              </div>
-            </article>
-          </div>
-        </section>
-
-        <!-- TAB 3: PROJECTS -->
-        <section class="tab-panel" id="panel-projects" role="tabpanel" aria-labelledby="tab-projects">
-          <div class="panel-header panel-header-row">
-            <span class="cmd-line">&gt; ls ./projects</span>
-            <div class="filter-group" role="group" aria-label="Filter projects">
-              <button type="button" class="filter-btn is-active" data-filter="all">all</button>
-              <button type="button" class="filter-btn" data-filter="web">web</button>
-              <button type="button" class="filter-btn" data-filter="java">java</button>
-              <button type="button" class="filter-btn" data-filter="audio">audio</button>
+            <div class="entry-body">
+              <h3>Software Development Student · BlackBerry QNX</h3>
+              <p class="role-sub">Acoustics Algorithms Team (8-Month Co-op)</p>
+              <p>
+                Bringing up QNX SDP 7.1 on Raspberry Pi hardware and building embedded audio testing
+                workflows for acoustic algorithm development.
+              </p>
             </div>
+          </article>
+
+          <article class="entry">
+            <div class="entry-meta">
+              <span class="date">Jul — Sep 2026</span>
+              <span class="location">Remote</span>
             </div>
+            <div class="entry-body">
+              <h3>Software &amp; AI Project Roles · Riipen Level UP</h3>
+              <ul class="clean-list">
+                <li>
+                  <strong>Pixels to Players:</strong> Built Vue/JavaScript features, UX/UI prototypes,
+                  and QA workflows for a game playtesting platform (60-hour engagement).
+                </li>
+                <li>
+                  <strong>Byte Quest Solutions:</strong> Contributed to curriculum planning and applied
+                  AI workflow research for an AI education initiative.
+                </li>
+              </ul>
+            </div>
+          </article>
 
-            <div class="project-grid">
-              <article class="card" data-category="web">
-                <div class="card-top">
-                  <h3>AudioArchive</h3>
-                  <span class="date">May 2026</span>
-                </div>
-                <p>
-                  Full-stack web application for organizing and archiving audio references, integrating
-                  the YouTube Data API v3 with persistent cloud storage.
-                </p>
-                <ul class="tags">
-                  <li>React</li>
-                  <li>Node.js</li>
-                  <li>Express</li>
-                  <li>MongoDB Atlas</li>
-                </ul>
-            </article>
+          <article class="entry">
+            <div class="entry-meta">
+              <span class="date">Apr 2024</span>
+              <span class="location">Aurora, ON</span>
+            </div>
+            <div class="entry-body">
+              <h3>Computer Engineering TA &amp; Instructor · St. Andrew’s College</h3>
+              <p>
+                Taught CAD fundamentals and programming logic for the SAC-CS First Teaching Program.
+              </p>
+            </div>
+          </article>
 
-                <article class="card" data-category="java">
-                  <div class="card-top">
-                    <h3>ClashRNG</h3>
-                    <span class="date">Dec 2025</span>
-                  </div>
-                  <p>
-                    Grid-based 2D Java roguelike RPG built around clean OOP design patterns, weighted
-                    randomization, JSON state persistence, and 99%+ JUnit test coverage.
-                  </p>
+          <article class="entry">
+            <div class="entry-meta">
+              <span class="date">Nov 2021 — Jul 2023</span>
+              <span class="location">Ontario</span>
+            </div>
+            <div class="entry-body">
+              <h3>Donations Processor &amp; Sales Associate · MCC Thrift Ontario</h3>
+              <p>
+                Managed retail operations and re-engineered donation intake pipelines to improve
+                sorting throughput.
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- TAB 3: PROJECTS -->
+      <section class="tab-panel" id="panel-projects" role="tabpanel" aria-labelledby="tab-projects">
+        <div class="panel-header panel-header-row">
+          <span class="cmd-line">&gt; ls ./projects</span>
+          <div class="filter-group" role="group" aria-label="Filter projects">
+            <button type="button" class="filter-btn is-active" data-filter="all">all</button>
+            <button type="button" class="filter-btn" data-filter="web">web</button>
+            <button type="button" class="filter-btn" data-filter="java">java</button>
+            <button type="button" class="filter-btn" data-filter="audio">audio</button>
+          </div>
+        </div>
+
+        <div class="project-grid">
+          <article class="card" data-category="web">
+            <div class="card-top">
+              <h3>AudioArchive</h3>
+              <span class="date">May 2026</span>
+            </div>
+            <p>
+              Full-stack web application for organizing and archiving audio references, integrating
+              the YouTube Data API v3 with persistent cloud storage.
+            </p>
+            <ul class="tags">
+              <li>React</li>
+              <li>Node.js</li>
+              <li>Express</li>
+              <li>MongoDB Atlas</li>
+            </ul>
+            <div class="card-links">
+              <a href="https://github.com/JameJ0/Audio-Archive" target="_blank" rel="noopener noreferrer"
+                class="card-link">[repo]</a>
+            </div>
+          </article>
+
+          <article class="card" data-category="java">
+            <div class="card-top">
+              <h3>ClashRNG</h3>
+              <span class="date">Dec 2025</span>
+            </div>
+            <p>
+              Grid-based 2D Java roguelike RPG built around clean OOP design patterns, weighted
+              randomization, JSON state persistence, and 99%+ JUnit test coverage.
+            </p>
             <ul class="tags">
               <li>Java</li>
               <li>JUnit</li>
               <li>OOP</li>
               <li>JSON</li>
             </ul>
-            </article>
-
-                <article class="card" data-category="java">
-                  <div class="card-top">
-                    <h3>SlimeBox</h3>
-                    <span class="date">May 2023</span>
-                  </div>
-                  <p>
-                    2D Java sandbox game featuring custom collision detection, sprite animation loops, and
-                    adaptive difficulty scaling.
-                  </p>
-        <ul class="tags">
-          <li>Java</li>
-          <li>2D Graphics</li>
-          <li>Game Loop</li>
-        </ul>
-        </article>
-
-              <article class="card" data-category="audio">
-                <div class="card-top">
-                  <h3>Chiptune &amp; Audio Lab</h3>
-                  <span class="date">Ongoing</span>
-                </div>
-                <p>
-                  Experiments in Game Boy chiptune tracking (LSDj), data bending, video game audio
-                  design, and vocal synthesis covers using SynthV 2 Pro.
-                </p>
-                <ul class="tags">
-                  <li>LSDj</li>
-                  <li>DSP / FFT</li>
-                  <li>SynthV 2 Pro</li>
-                  <li>FFmpeg</li>
-                </ul>
-              </article>
+            <div class="card-links">
+              <a href="https://github.com/JameJ0/ClashRNG" target="_blank" rel="noopener noreferrer"
+                class="card-link">[repo]</a>
             </div>
-        </section>
+          </article>
 
-          <!-- TAB 4: EDUCATION -->
-          <section class="tab-panel" id="panel-education" role="tabpanel" aria-labelledby="tab-education">
-            <div class="panel-header">
-              <span class="cmd-line">&gt; cat education.txt</span>
+          <article class="card" data-category="java">
+            <div class="card-top">
+              <h3>SlimeBox</h3>
+              <span class="date">May 2023</span>
             </div>
-
-            <div class="timeline">
-              <article class="entry">
-                <div class="entry-meta">
-                  <span class="date">2024 — Present</span>
-                  <span class="location">Vancouver, BC</span>
-                </div>
-                <div class="entry-body">
-                  <h3>University of British Columbia (UBC)</h3>
-                  <p class="role-sub">
-                    BSc in Computer Science (Artificial Intelligence Option) · Science Co-op
-                  </p>
-                  <p>3.9 GPA · Dean’s List standing.</p>
-                  <p class="muted-note">
-                    Coursework: CPSC 210, CPSC 213, CPSC 221, CPSC 340, Statistical Inference for Data
-                    Science, BIOL 121, ECON 101.
-                  </p>
-                </div>
-              </article>
-
-              <article class="entry">
-                <div class="entry-meta">
-                  <span class="date">Graduated Jun 2024</span>
-                  <span class="location">Aurora, ON</span>
-                </div>
-                <div class="entry-body">
-                  <h3>St. Andrew’s College</h3>
-                  <p>Academic Merit Pin &amp; Scholar Tie.</p>
-                </div>
-              </article>
+            <p>
+              2D Java sandbox game featuring custom collision detection, sprite animation loops, and
+              adaptive difficulty scaling.
+            </p>
+            <ul class="tags">
+              <li>Java</li>
+              <li>2D Graphics</li>
+              <li>Game Loop</li>
+            </ul>
+            <div class="card-links">
+              <a href="https://github.com/JameJ0/HS-game" target="_blank" rel="noopener noreferrer"
+                class="card-link">[repo]</a>
             </div>
-          </section>
+          </article>
 
-    <!-- TAB 5: SKILLS & BEYOND -->
-    <section class="tab-panel" id="panel-skills" role="tabpanel" aria-labelledby="tab-skills">
-      <div class="panel-header">
-        <span class="cmd-line">&gt; neofetch --skills</span>
-      </div>
+          <article class="card" data-category="audio">
+            <div class="card-top">
+              <h3>Chiptune &amp; Audio Lab</h3>
+              <span class="date">Ongoing</span>
+            </div>
+            <p>
+              Experiments in Game Boy chiptune tracking (LSDj), data bending, video game audio
+              design, and vocal synthesis covers using SynthV 2 Pro.
+            </p>
+            <ul class="tags">
+              <li>LSDj</li>
+              <li>DSP / FFT</li>
+              <li>SynthV 2 Pro</li>
+              <li>FFmpeg</li>
+            </ul>
+            <div class="card-links">
+              <a href="https://github.com/JameJ0/MusicStudio" target="_blank" rel="noopener noreferrer"
+                class="card-link">[repo]</a>
+            </div>
+          </article>
+        </div>
+      </section>
 
-              <div class="skills-grid">
-                <div class="skill-group">
-                  <h3>Languages</h3>
-                  <p>C / C++, Python, Java, JavaScript, R, Racket, SM213 Assembly</p>
-                </div>
-                  <div class="skill-group">
-                    <h3>Web &amp; Data</h3>
-                    <p>React, Vue, Node.js / Express, MongoDB Atlas, JUnit, Git / GitHub</p>
-                  </div>
-              <div class="skill-group">
-                <h3>Embedded &amp; Audio</h3>
-                <p>QNX SDP 7.1 RTOS, PyTorch / torchaudio, ONNX, DeepFilterNet, FFT, FFmpeg</p>
-              </div>
-                <div class="skill-group">
-                  <h3>Hardware Lab</h3>
-                  <p>Raspberry Pi 4 &amp; 5, HiFiBerry DAC / ADC HATs, EndeavourOS Linux &amp; Windows 11</p>
-                </div>
-  </div>
+      <!-- TAB 4: EDUCATION -->
+      <section class="tab-panel" id="panel-education" role="tabpanel" aria-labelledby="tab-education">
+        <div class="panel-header">
+          <span class="cmd-line">&gt; cat education.txt</span>
+        </div>
 
-    <div class="divider"></div>
+        <div class="timeline">
+          <article class="entry">
+            <div class="entry-meta">
+              <span class="date">2024 — Present</span>
+              <span class="location">Vancouver, BC</span>
+            </div>
+            <div class="entry-body">
+              <h3>University of British Columbia (UBC)</h3>
+              <p class="role-sub">
+                BSc in Computer Science (Artificial Intelligence Option) · Science Co-op
+              </p>
+              <p>3.9 GPA · Dean’s List standing.</p>
+              <p class="muted-note">
+                Coursework: CPSC 210, CPSC 213, CPSC 221, CPSC 340, Statistical Inference for Data
+                Science, BIOL 121, ECON 101.
+              </p>
+            </div>
+          </article>
+
+          <article class="entry">
+            <div class="entry-meta">
+              <span class="date">Graduated Jun 2024</span>
+              <span class="location">Aurora, ON</span>
+            </div>
+            <div class="entry-body">
+              <h3>St. Andrew’s College</h3>
+              <p>Academic Merit Pin &amp; Scholar Tie.</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- TAB 5: SKILLS & BEYOND -->
+      <section class="tab-panel" id="panel-skills" role="tabpanel" aria-labelledby="tab-skills">
+        <div class="panel-header">
+          <span class="cmd-line">&gt; neofetch --skills</span>
+        </div>
+
+        <div class="skills-grid">
+          <div class="skill-group">
+            <h3>Languages</h3>
+            <p>C / C++, Python, Java, JavaScript, R, Racket, SM213 Assembly</p>
+          </div>
+          <div class="skill-group">
+            <h3>Web &amp; Data</h3>
+            <p>React, Vue, Node.js / Express, MongoDB Atlas, JUnit, Git / GitHub</p>
+          </div>
+          <div class="skill-group">
+            <h3>Embedded &amp; Audio</h3>
+            <p>QNX SDP 7.1 RTOS, PyTorch / torchaudio, ONNX, DeepFilterNet, FFT, FFmpeg</p>
+          </div>
+          <div class="skill-group">
+            <h3>Hardware Lab</h3>
+            <p>Raspberry Pi 4 &amp; 5, HiFiBerry DAC / ADC HATs, EndeavourOS Linux &amp; Windows 11</p>
+          </div>
+        </div>
+
+        <div class="divider"></div>
 
         <div class="beyond-content">
           <h3>Beyond Code</h3>
@@ -323,12 +342,12 @@
             stairs.
           </p>
         </div>
-  </section>
-  </main>
+      </section>
+    </main>
 
-  <footer class="site-footer">
-    <span class="footer-hint">tip: press 1–5 to switch tabs</span>
-  </footer>
+    <footer class="site-footer">
+      <span class="footer-hint">tip: press 1–5 to switch tabs</span>
+    </footer>
   </div>
 
   <script src="script.js"></script>

@@ -398,6 +398,26 @@ body {
                     padding: 0.12rem 0.45rem;
                   }
 
+                  .card-links {
+                    display: flex;
+                    flex-wrap: wrap;
+                    gap: 0.65rem;
+                    margin-top: 0.85rem;
+                    padding-top: 0.65rem;
+                    border-top: 1px dashed var(--border);
+                  }
+
+                  .card-link {
+                    font-size: 0.8rem;
+                    color: var(--accent);
+                    text-decoration: none;
+                    transition: color 0.15s ease;
+                  }
+
+                  .card-link:hover {
+                    color: var(--text);
+                  }
+
                   /* Skills & Beyond */
                   .skills-grid {
                     display: grid;

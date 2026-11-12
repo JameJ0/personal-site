@@ -112,8 +112,44 @@ if (terminalForm && terminalInput) {
 
     if (cmd === "help") {
       showTerminalOutput(
-        "commands: cat about.txt | cat experience.log | ls ./projects | cat education.txt | cat skills.txt | clear"
+        "tabs: cat about.txt | cat experience.log | ls ./projects | cat education.txt | cat skills.txt | other: ls | whoami | pwd | uname -a | clear"
       );
+      terminalInput.value = "";
+      return;
+    }
+
+    if (cmd === "ls") {
+      showTerminalOutput("about.txt  experience.log  projects/  education.txt  skills.txt");
+      terminalInput.value = "";
+      return;
+    }
+
+    if (cmd === "whoami") {
+      showTerminalOutput("james");
+      terminalInput.value = "";
+      return;
+    }
+
+    if (cmd === "pwd") {
+      showTerminalOutput("/home/james");
+      terminalInput.value = "";
+      return;
+    }
+
+    if (cmd === "uname -a" || cmd === "uname") {
+      showTerminalOutput("QNX james-portfolio 7.1.0 aarch64 GNU/RTOS");
+      terminalInput.value = "";
+      return;
+    }
+
+    if (cmd === "sudo" || cmd.startsWith("sudo ")) {
+      showTerminalOutput("james is not in the sudoers file. This incident will be reported.", true);
+      terminalInput.value = "";
+      return;
+    }
+
+    if (cmd.startsWith("echo ")) {
+      showTerminalOutput(raw.slice(5));
       terminalInput.value = "";
       return;
     }
@@ -131,3 +167,48 @@ if (terminalForm && terminalInput) {
     terminalInput.select();
   });
 }
+
+// CRT color theme toggle (blue -> amber -> green)
+const themeToggleBtn = document.getElementById("theme-toggle");
+const themes = ["blue", "amber", "green"];
+
+function applyTheme(theme) {
+  const valid = themes.includes(theme) ? theme : "blue";
+  if (valid === "blue") {
+    document.documentElement.removeAttribute("data-theme");
+  } else {
+    document.documentElement.setAttribute("data-theme", valid);
+  }
+  if (themeToggleBtn) {
+    themeToggleBtn.textContent = `[theme: ${valid}]`;
+  }
+  localStorage.setItem("portfolio-theme", valid);
+}
+
+applyTheme(localStorage.getItem("portfolio-theme") || "blue");
+
+if (themeToggleBtn) {
+  themeToggleBtn.addEventListener("click", () => {
+    const current = localStorage.getItem("portfolio-theme") || "blue";
+    const next = themes[(themes.indexOf(current) + 1) % themes.length];
+    applyTheme(next);
+  });
+}
+
+// Discord-style "Playing a Game" live Vancouver time
+const vancouverTimerEl = document.getElementById("vancouver-timer");
+const vancouverTimeFormatter = new Intl.DateTimeFormat("en-CA", {
+  timeZone: "America/Vancouver",
+  hour12: false,
+  hour: "2-digit",
+  minute: "2-digit",
+  second: "2-digit",
+});
+
+function updateVancouverTimer() {
+  if (!vancouverTimerEl) return;
+  vancouverTimerEl.textContent = vancouverTimeFormatter.format(new Date());
+}
+
+updateVancouverTimer();
+setInterval(updateVancouverTimer, 1000);

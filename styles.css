@@ -114,6 +114,18 @@ body {
         color: var(--text);
       }
 
+      .prompt-cursor {
+        color: var(--accent);
+        font-weight: 600;
+        animation: blink 1.1s steps(1) infinite;
+        pointer-events: none;
+      }
+
+      .terminal-form:focus-within .prompt-cursor,
+      .terminal-form:has(.terminal-input:not(:placeholder-shown)) .prompt-cursor {
+        display: none;
+      }
+
       .terminal-input {
         flex: 1;
         min-width: 0;

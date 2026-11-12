@@ -84,8 +84,7 @@ const commandToTab = {
   "ls ./projects": "projects",
   "ls projects": "projects",
   "cat education.txt": "education",
-  "neofetch --skills": "skills",
-  "neofetch": "skills",
+  "cat skills.txt": "skills",
 };
 
 function clearTerminalOutput() {
@@ -121,7 +120,7 @@ if (terminalForm && terminalInput) {
 
     if (cmd === "help") {
       showTerminalOutput(
-        "commands: cat about.txt | cat experience.log | ls ./projects | cat education.txt | neofetch --skills | clear"
+        "commands: cat about.txt | cat experience.log | ls ./projects | cat education.txt | cat skills.txt | clear"
       );
       terminalInput.value = "";
       return;

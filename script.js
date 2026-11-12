@@ -1,11 +1,3 @@
-// Print / Save PDF button
-const printBtn = document.getElementById("print-resume-btn");
-if (printBtn) {
-  printBtn.addEventListener("click", () => {
-    window.print();
-  });
-}
-
 // Tab switching
 const tabButtons = document.querySelectorAll(".tab-btn");
 const tabPanels = document.querySelectorAll(".tab-panel");

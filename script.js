@@ -72,3 +72,71 @@ filterButtons.forEach((btn) => {
     });
   });
 });
+
+// Interactive top terminal prompt
+const terminalForm = document.getElementById("terminal-form");
+const terminalInput = document.getElementById("terminal-input");
+const terminalOutput = document.getElementById("terminal-output");
+
+const commandToTab = {
+  "cat about.txt": "about",
+  "cat experience.log": "experience",
+  "ls ./projects": "projects",
+  "ls projects": "projects",
+  "cat education.txt": "education",
+  "neofetch --skills": "skills",
+  "neofetch": "skills",
+};
+
+function clearTerminalOutput() {
+  if (!terminalOutput) return;
+  terminalOutput.textContent = "";
+  terminalOutput.classList.remove("is-error");
+  terminalOutput.hidden = true;
+}
+
+function showTerminalOutput(message, isError = false) {
+  if (!terminalOutput) return;
+  terminalOutput.textContent = message;
+  terminalOutput.classList.toggle("is-error", isError);
+  terminalOutput.hidden = false;
+}
+
+if (terminalForm && terminalInput) {
+  terminalForm.addEventListener("submit", (e) => {
+    e.preventDefault();
+    const raw = terminalInput.value.trim();
+    const cmd = raw.toLowerCase();
+
+    if (!cmd) {
+      clearTerminalOutput();
+      return;
+    }
+
+    if (cmd === "clear") {
+      clearTerminalOutput();
+      terminalInput.value = "";
+      return;
+    }
+
+    if (cmd === "help") {
+      showTerminalOutput(
+        "commands: cat about.txt | cat experience.log | ls ./projects | cat education.txt | neofetch --skills | clear"
+      );
+      terminalInput.value = "";
+      return;
+    }
+
+    const targetTab = commandToTab[cmd];
+    if (targetTab) {
+      clearTerminalOutput();
+      activateTab(targetTab);
+      terminalInput.value = "";
+      return;
+    }
+
+    const bin = raw.split(/\s+/)[0];
+    showTerminalOutput(`bash: ${bin}: command not found`, true);
+    terminalInput.select();
+  });
+}

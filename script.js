@@ -1,9 +1,3 @@
-// Update footer year
-const yearEl = document.getElementById("year");
-if (yearEl) {
-  yearEl.textContent = new Date().getFullYear();
-}
-
 // Print / Save PDF button
 const printBtn = document.getElementById("print-resume-btn");
 if (printBtn) {
